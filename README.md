@@ -6,7 +6,7 @@ A fork of <a href="https://github.com/Sevin7/7HUD">7HUD</a>, a Team Fortress 2 h
 About
 -------
 
-I made this hud because there wasn't really a hud out there that fit me perfectly. The reason I posted it on github is anytime i want to check my edits or merge rays changes with mine i could with ease.
+I made this hud because there wasn't really a hud out there that fit me perfectly.
 
 To-Do List
 --------
