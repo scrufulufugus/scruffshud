@@ -1,5 +1,24 @@
 "Resource/HudLayout.res"
 {
+
+	//Transparent Viewmodels
+
+	"TransparentViewmodelMask"
+	{
+		//alpha doesn't work for this, you need to change the texture's alpha
+		"ControlName"	"ImagePanel"
+		"fieldName"		"TransparentViewmodelMask"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-100"
+		"wide"			"f0"
+		"tall"			"480"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"replay/thumbnails/REFRACTnormal_transparent"
+		"scaleImage"	"1"
+	}
+    
 	/////////////////////////////////////////////////////////////////////////////
 	//  CUSTOMIZATION START   /////////////////////////////////////////////////////////////////////////////
 	/////////////////////////////////////////////////////////////////////////////
@@ -74,6 +93,27 @@
 	//Use the in-game crosshair for guidance
 	/////////////////////////////////////////////////////////////////////////////
 	
+	ScatterSpread
+	{
+		"controlName"	"CExLabel"
+		"fieldName"	 	"ScatterSpread"
+		"visible"		"1"
+		"enabled"		"1"
+		"zpos"			"2"
+
+		"xpos"			"c-99"
+		"ypos"			"c-99"
+		"wide"			"202"
+		"tall"			"198"
+
+		"font"			"Crosshairs32"
+		"labelText"		"0"
+		"textAlignment"	"center"
+		"outline"		"1"
+		
+		"fgcolor"		"255 255 255 127"
+	}
+    
 	/////////////////////////////////////////////////////////////////////////////
 	//Fog's Crosshairs
 	/////////////////////////////////////////////////////////////////////////////

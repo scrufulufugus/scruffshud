@@ -557,7 +557,16 @@ Scheme
 		// if a font fails to load then the subsequent fonts will replace
 		
 
-		
+		"Crosshairs32"
+				{
+					"1"
+					{
+					"name"			"Crosshairs"
+					"tall" 			"32"
+					"weight" 		"0"
+					"antialias" 	"1"
+					}
+		}
 		
 		"fogCrosshair"			//fog's crosshair
 		{
