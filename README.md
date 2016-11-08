@@ -35,10 +35,10 @@ To Install
  
  1. Click the green `Clone or Download` button at the top of the page and then `Download Zip` in order to download.
  2. Navigate to 
-    * Windows: `C:\Program Files (x86)\Steam\SteamApps\common\Team Fortress 2\tf`
+	* Windows: `C:\Program Files (x86)\Steam\SteamApps\common\Team Fortress 2\tf`
 	* Mac:     `/Users/username/Library/Application Support/Steam/SteamApps/common/Team Fortress 2/tf`
-	3. Create a folder named `custom` if it does not already exist
-	4. Extract .zip file contents into `custom` directory. You may rename the top folder whatever you wish.
+ 3. Create a folder named `custom` if it does not already exist
+ 4. Extract .zip file contents into `custom` directory. You may rename the top folder whatever you wish.
 	
 	The final structure should resemble the following:
 	```
@@ -50,19 +50,19 @@ To Install
 	                            ├── scripts
 	                                    ├── sound
 	                                            └── ...
-	                                            ```
+	```
 
 
 Help/Support
 --------
 
-Coming soon...
+ Coming soon...
 
 Credits
 --------
 
-Sevin7 for the base hud, <a href="https://github.com/Sevin7/7HUD">7HUD</a>.
+ Sevin7 for the base hud, <a href="https://github.com/Sevin7/7HUD">7HUD</a>.
 
-Ray, for his awesome vids, his README, and for getting me into huds.
+ Ray, for his awesome vids, his README, and for getting me into huds.
 
-Flame, For his manual on making/editing huds.
+ Flame, For his manual on making/editing huds.
