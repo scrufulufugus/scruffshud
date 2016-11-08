@@ -1,22 +1,23 @@
 scruffshud
 =======
 
-A Team Fortress 2 hud.
+ A <a href="http://teamfortress.com/">Team Fortress 2</a> hud.
 
 About
 --------
 
-I made this hud because there wasn't really a hud out there that fit me perfectly.
+ A mashup of all my favorite huds
 
 To-Do List
 --------
 
-* Update hud to custom standard
-* Finish hud README
+ * Update hud to custom standard
+ * Finish hud README
 
 Screenshots
 --------
 
+ Coming soon...
 
 Features
 --------
