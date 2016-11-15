@@ -991,7 +991,7 @@
 		"visible"	"1"
 		"enabled"	"1"
 		"xpos"		"-18"
-		"ypos"		"0"
+		"ypos"		"-140"
 		"wide"		"640"
 		"tall"		"480"
 		

@@ -1,51 +1,31 @@
-//-----------------------------------------------------
-//Fog's Crosshair
-//-----------------------------------------------------
-
-event DamagedPlayer
-{	
-	event DamagedPlayer 
-	{
-		StopEvent HitMarker 0.0
-		RunEvent HitMarker 0.01
-	}
-
-	event HitMarker
-	{
-		Animate ScatterSpread FgColor "255 0 0 127" Linear 0.0 0.00001
-		Animate ScatterSpread FgColor "255 255 255 127" Linear 0.0 0.22001
-	}
-}
-
-//-----------------------------------------------------
-
-//Health Bonus Pulse
+//======================================================================================
+// OverHeal (Pulse)
 event HudHealthBonusPulse
 {
 	Animate	PlayerStatusHealthBonusImage 	Alpha		"205"		    Linear 0.0 0.2
 	Animate	PlayerStatusHealthBonusImage 	Alpha		"0"		        Linear 0.2 0.4
 
 	Animate	PlayerStatusHealthValueCam 		FgColor		"Buff"	        Accel 0.0 0.0
-	Animate	PlayerStatusHealthValueSpec 	FgColor		"WhiteS"	         Accel 0.0 0.0
+	Animate	PlayerStatusHealthValueSpec 	FgColor		"WhiteS"	    Accel 0.0 0.0
 	
 	Animate	TargetHPBGTournament 			BgColor		"BuffSpec"	    Accel 0.0 0.0	
 	
-	Animate	PlayerStatusHealthValueShadow 	FgColor		"Blank"	         Accel 0.0 0.0	
+	Animate	PlayerStatusHealthValueShadow 	FgColor		"Blank"	        Accel 0.0 0.0	
 
     Animate	HealthBG 	    BgColor		"BuffBG"	        Accel 0.0 0.0
     Animate	HealthBG 	    Alpha		"255"		        Accel 0.0 0.1
 	Animate	HealthBG 	    Alpha		"255"		        Accel 0.1 0.3
 	
-	Animate	TargetHPBG 	    BgColor		"BuffSpec"	    Accel 0.0 0.0
+	Animate	TargetHPBG 	    BgColor		"BuffSpec"	    	Accel 0.0 0.0
     Animate	TargetHPBG 	    Alpha		"255"		        Accel 0.0 0.1
 	Animate	TargetHPBG 	    Alpha		"255"		        Accel 0.1 0.3
 
 	Animate	xHairNormal 	                                FgColor		"Buff"	         Accel 0.0 0.0
-	Animate	xHairThin 	                                FgColor		"Buff"	         Accel 0.0 0.0
-	Animate	xHairThinOutline	                                FgColor		"Buff"	         Accel 0.0 0.0
+	Animate	xHairThin 	                                	FgColor		"Buff"	         Accel 0.0 0.0
+	Animate	xHairThinOutline	                        	FgColor		"Buff"	         Accel 0.0 0.0
 	Animate	xHairRequest 	                                FgColor		"Buff"	         Accel 0.0 0.0
-	Animate	xHairCircle	                                FgColor		"Buff"	         Accel 0.0 0.0
-	Animate	xHairDotOutline 	                                FgColor		"Buff"	         Accel 0.0 0.0
+	Animate	xHairCircle	                                	FgColor		"Buff"	         Accel 0.0 0.0
+	Animate	xHairDotOutline 	                            FgColor		"Buff"	         Accel 0.0 0.0
 
 	RunEvent HudHealthBonusPulseLoop	0.6
 }
@@ -57,12 +37,13 @@ event HudHealthBonusPulseLoop
 	RunEvent PlayerStatusHealthValue 0.0
 	RunEvent PlayerStatusHealthValueCam 0.0
 	RunEvent PlayerStatusHealthValueSpec 0.0
-        	RunEvent xHairNormal 0.0
-        	RunEvent xHairThin 0.0
-        	RunEvent xHairThinOutline 0.0
-        	RunEvent xHairRequest 0.0
-        	RunEvent xHairCircle 0.0
-        	RunEvent xHairDotOutline 0.0
+    
+	RunEvent xHairNormal 0.0
+    RunEvent xHairThin 0.0
+    RunEvent xHairThinOutline 0.0
+    RunEvent xHairRequest 0.0
+    RunEvent xHairCircle 0.0
+    RunEvent xHairDotOutline 0.0
 }
 
 event HudHealthBonusPulseStop
@@ -101,9 +82,8 @@ event HudHealthBonusPulseStop
     Animate	TargetHPBG 	     Alpha		    "255"		           Accel 0.0 0.0
 }
 
-//===========================================
-
-//Health Dying Pulse
+//======================================================================================
+// Low Health (Dying)
 event HudHealthDyingPulse
 {
 	Animate	PlayerStatusHealthBonusImage 	Alpha		"175"		    Linear 0.0 0.075
@@ -186,9 +166,8 @@ event HudHealthDyingPulseStop
     Animate	TargetHPBG 	     Alpha		    "255"		            Accel 0.0 0.0
 }
 
-//===========================================
-
-
+//======================================================================================
+// Low Ammo 
 event HudLowAmmoPulse
 {
 	Animate	HudWeaponLowAmmoImage		Alpha		"255"		Linear 0.0 0.075
@@ -223,7 +202,8 @@ event HudLowAmmoPulseStop
 	Animate	AmmoNoClipShadow 		FgColor		"HudShadow"	     Accel 0.0 0.0		
 }
 
-// Flash the medic charge hud when we have full charge
+//======================================================================================
+// Color flash when the Medic has full Ubercharge
 
 event HudMedicCharged
 {
@@ -267,9 +247,27 @@ event HudMedicChargedStop
     Animate	ChargeMeter 	        BgColor		"HudBG"		        linear 0.0 0.0
 }
 
-//===========================================
+//======================================================================================
+// Animation whenever you damage a player (typically used for custom crosshairs)
 
+event DamagedPlayer
+{	
+	event DamagedPlayer 
+	{
+		StopEvent HitMarker 0.0
+		RunEvent HitMarker 0.01
+	}
+
+	event HitMarker
+	{
+		Animate ScatterSpread FgColor "255 0 0 127" Linear 0.0 0.00001
+		Animate ScatterSpread FgColor "255 255 255 127" Linear 0.0 0.22001
+	}
+}
+
+//======================================================================================
 // Spy Disguise
+
 event HudSpyDisguiseChanged
 {
 	Animate PlayerStatusSpyOutlineImage		Alpha		"255"			Linear 0.0 0.2
