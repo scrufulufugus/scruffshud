@@ -90,7 +90,7 @@
 	{
 		"label" "scruffshud"
 		"command"		"engine toggleconsole;
-			play vo/halloween_merasmus/hall2015_fightmeras_rare_02.mp3
+			play vo/compmode/cm_scout_pregamefirst_rare_01.mp3
 			echo -------------------------------------------------------------------------------;
 			echo -------------------------------------------------------------------------------;
 			echo ----------------------- To check for updates go to null -----------------------;
@@ -100,9 +100,9 @@
 	}	
 	"Version"
 	{
-		"label" "v0.15b"
+		"label" "v0.16b"
 		"command"		"engine toggleconsole;
-			play vo/halloween_merasmus/hall2015_fightmeras_rare_02.mp3
+			play vo/compmode/cm_scout_pregamefirst_rare_01.mp3
 			echo -------------------------------------------------------------------------------;
 			echo -------------------------------------------------------------------------------;
 			echo ----------------------- To check for updates go to null -----------------------;

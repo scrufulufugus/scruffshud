@@ -4994,6 +4994,19 @@ Scheme
 				"custom"	"1"
 			}
 		}		
+
+		"MapVotesPercentage"
+		{
+			"1"
+			{
+				"name"		"AvenirLTStd-Book"
+				"tall"		"12"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias" "1"
+				"dropshadow"	"1"
+			}
+		}
 	}
 	
 	//////////////////////// BITMAP FONT FILES /////////////////////////////
